@@ -1,0 +1,110 @@
+html, body {
+    background-color: #898989; /* Aplica el color de fondo a toda la página */
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #898989;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #898989;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+    padding: 0px;
+    background-color: #898989;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Altura fija para el carrusel */
+    overflow: hidden;
+    margin:none; /* Asegura que no se vea nada fuera del área del carrusel */
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%; /* Las imágenes ocuparán el 100% del ancho del carrusel */
+    height: 500px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se recorten de forma uniforme */
+    border: none; /* Elimina los bordes de las imágenes */
+    margin: 0; /* Elimina márgenes alrededor de las imágenes */
+    padding: 0; /* Elimina padding alrededor de las imágenes */
+}
+
+.carousel-caption {
+    padding-bottom: 50%;
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    color: aliceblue;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: auto; 
+    font-family:'Times New Roman', Times, serif ;
+    position: sticky;
+}
+.my-4{
+    margin-top:0px;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #f00000;
+}
+footer a {
+    color: aliceblue;
+    text-decoration: none;
+}

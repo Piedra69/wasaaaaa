@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renta</title>
-    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link
@@ -13,13 +13,15 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous"
     />
-
-</head>
 <body>
-    <header>
+</head>
+    <header >
         <div class="d-flex justify-content-between align-items-center container py-3">
-          <img src="IMG/logo.1.png" alt="Roca Motors" style="height: 70px;" />
-          <ul class="nav nav-pills mb-0">
+
+        <img src="IMG/logo.1.png" alt="Roca Motors" style="height: 70px;" />
+    
+
+        <ul class="nav nav-pills mb-0">
             <li><a class="nav-link text-light" href="index.html">Home</a></li>
             <li>
               <a class="nav-link text-light" href="catalogo.html">Vehículos</a>
@@ -28,7 +30,7 @@
               <a class="nav-link text-light" href="categorias.html">Categorías</a>
             </li>
             <li class="nav-item">
-              <a
+            <a
                 class="nav-link text-light"
                 id="pills-contact-tab"
                 data-bs-toggle="pill"
@@ -38,41 +40,33 @@
                 aria-controls="pills-contact"
                 aria-selected="false"
                 ><i class="bi bi-cart4"></i></a
-              >
+            >
             </li>
-          </ul>
+        </ul>
         </div>
-      </header>
-      <section class="container-fluid position-relative p-0">
-        <div id="carouselBackground" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="IMG/Img1.jpg" alt="Imagen 1" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="IMG/Img2.jpg" alt="Imagen 2" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="IMG/Img3.jpg" alt="Imagen 3" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="IMG/img4.jpg" alt="Imagen 4" class="d-block w-100">
-                </div>
-            </div>
-        </div>
-        <h5 class="position-absolute top-50 start-50 translate-middle text-center text-white fs-2" style="font-family: 'Times New Roman', Times, serif;">!Renta el vehiculo de tus sueños</h5>
-    </section>
-    <main class="container-fluid py-5">
-        <div class="row">
-            <div class="col-md-8">
-                <h2>Renta el vehículo ideal para ti</h2>
-                <p>
-                    Disfruta de la mayor variedad y calidad de vehículos de la ciudad. Renta tu vehículo ideal para tu día ideal.
-                </p>
-                <p>
-                    Desde Toyota hasta Porsche, tenemos lo mejor para ti que quieres ser lo mejor.
-                </p>
-            </div>
+    </header>
+
+
+    <main>
+        <div class="info-usuario">
+            <h2>Info de contacto de usuario</h2>
+            <form action="#" method="post">
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" placeholder="123-456-7890"><br><br>
+    
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez"><br><br>
+    
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" name="ciudad">
+                    <option value="sucre">Sucre</option>
+                    <option value="cochabamba">Cochabamba</option>
+                    <option value="lapaz">La Paz</option>
+                    <option value="santacruz">Santa Cruz</option>
+                </select><br><br>
+    
+                <button type="button" class="btn-subir" onclick="window.location.href='cuadricula.html'">Subir Info</button>
+            </form>
         </div>
     </main>
 
@@ -86,16 +80,8 @@
         </p>
     </footer>
     
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script>
-        // Configurar la duración del carrusel
-        const carousel = document.querySelector('#carouselBackground');
-        const carouselInstance = new bootstrap.Carousel(carousel, {
-            interval: 3300, // 5 segundos entre imágenes
-            ride: 'carousel'
-        });
-    </script>
+
 </body>
 </html>

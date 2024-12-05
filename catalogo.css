@@ -1,0 +1,184 @@
+body {
+  background-color: #989898; /* Lavanda pastel claro */
+  font-family: 'Times New Roman', Times, serif;
+  color: #5a5a7a;
+}
+
+header, .alert {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid rgba(183, 169, 255, 0.3);
+  font-family: 'Times New Roman', Times, serif;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+}
+
+header .nav-link {
+  color: white !important;
+
+}
+
+
+
+.description {
+  height: 40px;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+  padding: 8px;
+  background-color: #a8a8a8; /* Rosa pastel muy claro */
+  border-radius: 8px;
+  border: 1px solid #363636;
+  line-height: 1.5;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.description:hover {
+  height: 80px;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.2);
+}
+
+/* Contenedor principal del carrito */
+.carrito {
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(183, 169, 255, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(251, 250, 252, 0.1);
+}
+
+/* Tarjetas */
+.card-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(183, 169, 255, 0.4); /* Sombra lavanda */
+}
+
+.card {
+  background-color: rgba(183, 169, 255, 0.3); /* Lavanda pastel claro */
+  border: 1px solid rgba(183, 169, 255, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(183, 169, 255, 0.3);
+}
+
+.card .card-title {
+  font-size: 1.3rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: #5a5a7a;
+}
+
+.card .card-text {
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: #5a5a7a;
+  text-align: justify;
+}
+
+.card .precio {
+  color: #323138;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card .btn-primary {
+  background-color: rgb(229, 8, 8);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card .btn-primary:hover {
+  background-color: #a00000;
+  transform: scale(1.05);
+}
+
+/* Estilos para productos */
+.table__productos {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ffffff4d; /* Azul pastel muy claro */
+  border-radius: 12px;
+  border: 1px solid #ffffff4d;
+  transition: transform 0.2s ease;
+}
+
+.table__productos:hover {
+  transform: translateY(-2px);
+  background-color: #ffffff4d;
+}
+
+.table__productos > img {
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-right: 20px;
+  border: 1px solid #ffffff4d;
+  padding: 5px;
+  background-color: #ffffff4d;
+}
+
+/* Estilos para el contador de cantidad */
+.table__cantidad > input {
+  width: 50px;
+  border: 2px solid #ffffff4d;
+  border-radius: 6px;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 30px;
+  padding: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ffffff4d;
+  transition: border-color 0.3s ease;
+}
+
+.table__cantidad > input:focus {
+  border-color: #323138;
+}
+
+/* Utilidades */
+.hide, .remove {
+  display: none;
+}
+
+footer {
+  background-color: #000000;
+  text-align: center;
+  color: aliceblue;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: auto;
+  font-family: 'Times New Roman', Times, serif;
+  position: sticky;
+}
+
+footer a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #f00000;
+}
